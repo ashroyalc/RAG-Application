@@ -1,4 +1,4 @@
-# Simple RAG (Retrieval Augmented Generation) Application
+# Simple RAG (Retrieval Augmented Generation) Application (beta)
 
 This is a simple implementation of a Retrieval Augmented Generation (RAG) application using LangChain, Chroma, and the Google Generative AI API. The application allows users to upload a PDF file, which is then processed and stored in a Chroma vector database. Users can then query the uploaded data, and the application will retrieve relevant information from the PDF and generate an answer using the Google Generative AI model.
 
