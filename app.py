@@ -7,7 +7,9 @@ from langchain_core.prompts import ChatPromptTemplate,SystemMessagePromptTemplat
 from langchain_core.messages import AIMessage,HumanMessage
 import os
 import streamlit as st
+import nltk
 
+nltk.download('punkt')
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
