@@ -140,7 +140,7 @@ python-multipart==0.0.9
 pytz==2024.1
 PyYAML==6.0.1
 pyzmq==26.0.3
-pysqlite3-binary==
+pysqlite3-binary==0.5.2.post3
 referencing==0.35.1
 regex==2024.4.28
 requests==2.31.0
