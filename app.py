@@ -14,7 +14,7 @@ __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
-st.title("Document Search with powdered by AI")
+st.title("Document Search powdered by AI")
 
 chunks = []
 
