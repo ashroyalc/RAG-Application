@@ -14,7 +14,8 @@ __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
-st.title("Document Search powdered by AI")
+st.title("Document search powered by AI")
+st.caption("Search content within the document")
 
 chunks = []
 
@@ -46,7 +47,7 @@ def vector_store(chunks):
 def retr():
     ####### retriving from db #######
     db_connection = Chroma(persist_directory="./rag_chromadb",embedding_function=e_model)
-    retriver = db_connection.as_retriever(search_kwargs={"k":5}) #retriver top 5 document based on the search 
+    retriver = db_connection.as_retriever(search_kwargs={"k":10}) #retriver top 5 document based on the search 
     return retriver
 
 
