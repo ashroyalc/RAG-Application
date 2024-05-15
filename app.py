@@ -14,7 +14,7 @@ __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
-st.title("Document search powered by AI")
+st.title("Empowering PDF Document Search with AI")
 st.caption("Search content within the document")
 
 chunks = []
@@ -87,8 +87,8 @@ def main():
         document_loader(uploaded_file.name)
         
         if query := st.text_input("Enter your query here"):
-            response = rag_chain.invoke(query)
-            st.write(response)
+            response = rag_chain.stream(query)
+            st.write_stream(response)
 
 
 if __name__ == "__main__":
